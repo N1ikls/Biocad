@@ -1,0 +1,221 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+div,a {
+  font-family:'TT Norms', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+.content {
+  padding: 30px;
+ 
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;  
+}
+/*-------------------------------------------------------------------------------------------*/
+.head {
+}
+.head__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.head__row:not(:last-child) {
+  margin-bottom: 35px;
+}
+.head__input div{
+  margin-left: auto;
+  
+}
+
+@media (max-width: 427px) {
+  .head__input div{
+    margin: 0;
+  }
+  .button {
+    margin-top: 15px !important;
+  }
+}
+.head__input input {
+  background: #FFFFFF;
+  height: 30px;
+/* e9e9e9 */
+border: 1px solid #E9E9E9;
+font-size: 20px;
+flex: 0 1 auto;
+width: 250px;
+}
+.head__image {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width:437px) {
+  ._image {
+    flex-direction: column;
+    align-items: center;
+    }
+    .image {
+      padding: 10px;
+    }
+}
+.head__box {
+}
+/*-------------------------------------------------------------------------------------------*/
+.input__label {
+  display: flex;
+  flex-direction: column;
+  color: #8C8C8C;
+  letter-spacing: 0.16px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom: 21px;
+  padding: 10px;
+}
+.input__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+/*-------------------------------------------------------------------------------------------*/
+.button {
+  max-width: 100px;
+  color: #FFFFFF;
+  background-color: black;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+.head__title {
+  line-height: 24px;
+  font-size: 24px;
+  margin-left: 17px;
+  width: 300px;
+  flex: 0 1 auto;
+
+}
+@media (max-width:385px) {
+  .head__title{
+    width: auto;
+  }
+  .select {
+    width: auto;
+  }
+}
+/*-------------------------------------------------------------------------------------------*/
+
+.box__row {
+  display: flex;
+}
+.select {
+  background: #FFFFFF;
+/* e9e9e9 */
+
+border: 1px solid #E9E9E9;
+font-size: 20px;
+padding: 10px;
+width: 250px;
+
+}
+.box__select {
+padding: 10px;
+margin-bottom: 19px;
+}
+.box__radio {
+  display: flex;
+  flex-direction: column;
+}
+.radio:not(:last-child) {
+  margin-bottom: 13px;
+}
+/*-------------------------------------------------------------------------------------------*/
+input[type='radio'] {
+  position: relative;
+  height: 22px;
+  width: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type='radio']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid dodgerblue;
+}
+
+input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
