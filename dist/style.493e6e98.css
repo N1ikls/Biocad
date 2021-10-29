@@ -299,5 +299,80 @@ border-radius: 5px;
   }
   
 }
+/*-------------------------------main table------------------------------------------------------------*/
+
+.main__title {
+  font-weight: 600;
+  color: black;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  
+}
+th {
+  color: #939DA6;
+  text-align: start;
+  padding: 20px 20px;  
+  padding-right: 40px;
+}
+td {
+  padding: 20px 20;
+  padding-right: 40px;
+  text-align: start;
+  color: #353535;
+  font-weight: 500px;
+  font-size: 24px;
+  
+}
+.table__text {
+  
+}
+.td__icon {
+  background:url('/icon.cb20b317.png') right no-repeat;
+}
+.td__icon__cancel {
+  background: url('/icon__cancel.ff5128de.png') right no-repeat;
+}
+.main {
+  padding: 60px 20px;
+}
+@media (max-width:786px) {
+
+}
+@media screen and (max-width: 786px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px solid transparent;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
+}
 
 /*# sourceMappingURL=/style.493e6e98.css.map */
