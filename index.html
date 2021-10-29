@@ -95,7 +95,7 @@
             </div>
             <div class="head__box">
               <div class="box__row">
-                <form action="" class="for">
+                <form action="" class="form">
                   <div class="box__select">
                     <select name="select" class="select">
                       <option selected value="1">1 month</option>
@@ -113,10 +113,38 @@
                     </select>
                   </div>
                   <div class="box__radio">
-                    <input type="radio" checked class = "radio" />
-                    <input type="radio" checked class = "radio" /> 
-                    <input type="radio" checked class = "radio" /> 
-                     
+                    <div class="box__input">
+                      <input
+                        type="radio"
+                        name="radio1"
+                        id="answer1"
+                        value="Calibration"
+                      />
+
+                      <div class="label" for="answer1">Calibration</div>
+                    </div>
+
+                    <div class="box__input">
+                      <input
+                        type="radio"
+                        name="radio1"
+                        id="answer2"
+                        value="Measuring"
+                      />
+                      <div class="label" for="answer2">Measuring</div>
+                    </div>
+                    <div class="box__input">
+                      <input
+                        type="radio"
+                        name="radio1"
+                        id="answer3"
+                        value="Using"
+                      />
+                      <div class="label" for="answer3">Using</div>
+                    </div>
+                  </div>
+                  <div class="box__button">
+                    Generate report
                   </div>
                 </form>
               </div>
